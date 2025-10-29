@@ -220,7 +220,13 @@ print(f"Écart-type: {colonne.std():.2f}")
 print(f"Variance: {colonne.var():.2f}")
 print(f"Min: {colonne.min():.2f}")
 print(f"Max: {colonne.max():.2f}")
-
+Moyenne: 1207379525661.76
+Médiane: 16725908148.55
+Mode: 340000000.00
+Écart-type: 5537517274228.25
+Variance: 30664097562376314470531072.00
+Min: 11502.63
+Max: 105435039507024.09
 # Quartiles
 print(f"Q1 (25%): {colonne.quantile(0.25):.2f}")
 print(f"Q2 (50% - Médiane): {colonne.quantile(0.50):.2f}")
