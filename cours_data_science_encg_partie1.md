@@ -1,6 +1,6 @@
 # COURS DE SCIENCE DES DONNÉES
 
-<img src="logo encg" style="height:100px;margin-right:95px"/>
+<img src="logo encg.jpg" style="height:100px;margin-right:95px"/>
 ## École Nationale de Commerce et de Gestion (ENCG) - 4ème Année
 <img src="faat.jpg" style="height:200px;margin-right:150px"/>
 # AZDA FATIMA-ZAHRA---
