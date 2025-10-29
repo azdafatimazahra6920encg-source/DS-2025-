@@ -1,7 +1,7 @@
 # 📊 Analyse Économique Mondiale : PIB par Pays 2024
 ## Rapport d'Analyse Approfondie et Interprétation des Résultats
 #AZDA FATIMA-ZAHRA
-<img src="faat.jpg" style="height:464px;margin-right:432px"/>
+<img src="faat.jpg" style="height:100px;margin-right:150px"/>
 **Date:** Octobre 2024  
 **Auteur:** Analyse Économique  
 **Période couverte:** Année 2024
