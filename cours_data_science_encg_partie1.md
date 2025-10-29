@@ -3,7 +3,7 @@
 <img src="logo encg.jpg" style="height:100px;margin-right:95px"/>
 ## École Nationale de Commerce et de Gestion (ENCG) - 4ème Année
 <img src="faat.jpg" style="height:200px;margin-right:150px"/>
-# AZDA FATIMA-ZAHRA---
+#AZDA FATIMA-ZAHRA
 
 # PARTIE 1 : FONDAMENTAUX DE LA SCIENCE DES DONNÉES
 
