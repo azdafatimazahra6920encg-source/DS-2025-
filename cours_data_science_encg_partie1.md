@@ -183,7 +183,33 @@ print(df.info())
 
 # Statistiques descriptives
 print(df.describe())
-
+ Country Name Country Code  Year         Value
+0  Afghanistan          AFG  2000  3.521418e+09
+1  Afghanistan          AFG  2001  2.813572e+09
+2  Afghanistan          AFG  2002  3.825701e+09
+3  Afghanistan          AFG  2003  4.520947e+09
+4  Afghanistan          AFG  2004  5.224897e+09
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 13979 entries, 0 to 13978
+Data columns (total 4 columns):
+ #   Column        Non-Null Count  Dtype  
+---  ------        --------------  -----  
+ 0   Country Name  13979 non-null  object 
+ 1   Country Code  13979 non-null  object 
+ 2   Year          13979 non-null  int64  
+ 3   Value         13979 non-null  float64
+dtypes: float64(1), int64(1), object(2)
+memory usage: 437.0+ KB
+None
+                  Year         Value
+count  13979.000000  1.397900e+04
+mean    1994.672866  1.207380e+12
+std       17.731413  5.537517e+12
+min     1960.000000  1.150263e+04
+25%     1980.000000  2.233880e+09
+50%     1996.000000  1.672591e+10
+75%     2010.000000  2.058542e+11
+max     2023.000000  1.054350e+14
 # Statistiques pour une colonne spécifique
 colonne = df['Value']  # Adapter selon vos données
 
