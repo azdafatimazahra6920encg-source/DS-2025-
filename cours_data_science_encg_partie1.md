@@ -1,6 +1,8 @@
 # COURS DE SCIENCE DES DONNÉES
+
+<img src="logo encg" style="height:100px;margin-right:95px"/>
 ## École Nationale de Commerce et de Gestion (ENCG) - 4ème Année
-<img src="faat.jpg" style="height:464px;margin-right:432px"/>
+<img src="faat.jpg" style="height:200px;margin-right:150px"/>
 # AZDA FATIMA-ZAHRA---
 
 # PARTIE 1 : FONDAMENTAUX DE LA SCIENCE DES DONNÉES
