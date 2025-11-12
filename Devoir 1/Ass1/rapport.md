@@ -248,44 +248,31 @@ Le dataset peut également être téléchargé directement au format Excel (.xls
 # ANALYSE VISUELLE DU DATASET : DEFAULT OF CREDIT CARD CLIENTS
 # Basé sur l'étude de Yeh & Lien (2009)
 # =====================================================
-''' python
+```python
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
-
-# --- Configuration générale ---
 sns.set(style="whitegrid", palette="Set2", font_scale=1.1)
 plt.rcParams['figure.figsize'] = (8,5)
-
-# --- Chargement du dataset ---
 url = "https://archive.ics.uci.edu/ml/machine-learning-databases/00350/default%20of%20credit%20card%20clients.xls"
 data = pd.read_excel(url, header=1)
 data.rename(columns={"default payment next month": "DEFAULT"}, inplace=True)
 
 print("✅ Données chargées avec succès :", data.shape, "observations\n")
-
-# --- Nettoyage rapide ---
 data = data.dropna()
 data["SEX"] = data["SEX"].map({1: "Homme", 2: "Femme"})
-
-# =====================================================
-# GRAPHIQUE 1 : Répartition du défaut global
-# =====================================================
 sns.countplot(x="DEFAULT", data=data)
 plt.title("Répartition globale du défaut de paiement")
 plt.xlabel("Défaut de paiement (1=Oui, 0=Non)")
 plt.ylabel("Nombre de clients")
 plt.show()
-
-# =====================================================
-# GRAPHIQUE 2 : Répartition du défaut par sexe
-# =====================================================
 sns.countplot(x="SEX", hue="DEFAULT", data=data)
 plt.title("Défaut de paiement selon le sexe")
 plt.xlabel("Sexe")
 plt.ylabel("Nombre de clients")
 plt.show()
-'''
+
+```
 
 
 <img src="graphe 1.png" style="height:200px;margin-right:150px"/>
