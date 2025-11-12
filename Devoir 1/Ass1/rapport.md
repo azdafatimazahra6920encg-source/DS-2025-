@@ -239,6 +239,7 @@ Le dataset peut également être téléchargé directement au format Excel (.xls
 - Risque de biais discriminatoires
 - Transparence des modèles de décision
 <img src="graphe 1.png" style="height:200px;margin-right:150px"/>
+<img src="graphe 2:png" style="height:200px;margin-right:150px"/>
 ---
 
 ## 11. Conclusion
