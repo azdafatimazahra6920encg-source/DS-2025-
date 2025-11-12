@@ -243,7 +243,12 @@ Le dataset peut également être téléchargé directement au format Excel (.xls
 # ANALYSE VISUELLE DU DATASET : DEFAULT OF CREDIT CARD CLIENTS
 # Basé sur l'étude de Yeh & Lien (2009)
 # =====================================================
-
+# code python
+# =====================================================
+# ANALYSE VISUELLE DU DATASET : DEFAULT OF CREDIT CARD CLIENTS
+# Basé sur l'étude de Yeh & Lien (2009)
+# =====================================================
+''' python
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -280,7 +285,7 @@ plt.title("Défaut de paiement selon le sexe")
 plt.xlabel("Sexe")
 plt.ylabel("Nombre de clients")
 plt.show()
-
+'''
 
 
 <img src="graphe 1.png" style="height:200px;margin-right:150px"/>
