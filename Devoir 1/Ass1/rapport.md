@@ -239,15 +239,6 @@ Le dataset peut également être téléchargé directement au format Excel (.xls
 - Risque de biais discriminatoires
 - Transparence des modèles de décision
 # Code python
-# =====================================================
-# ANALYSE VISUELLE DU DATASET : DEFAULT OF CREDIT CARD CLIENTS
-# Basé sur l'étude de Yeh & Lien (2009)
-# =====================================================
-# code python
-# =====================================================
-# ANALYSE VISUELLE DU DATASET : DEFAULT OF CREDIT CARD CLIENTS
-# Basé sur l'étude de Yeh & Lien (2009)
-# =====================================================
 ```python
 import pandas as pd
 import matplotlib.pyplot as plt
