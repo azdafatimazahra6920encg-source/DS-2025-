@@ -266,8 +266,8 @@ plt.show()
 ```
 
 
-<img src="graphe 1.png" style="height:200px;margin-right:150px"/>
-<img src="graphe 2.png" style="height:200px;margin-right:150px"/>
+<img src="graphe 1.png" style="height:200px;margin-right:200px"/>
+<img src="graphe 2.png" style="height:200px;margin-right:200px"/>
 ---
 
 ## 11. Conclusion
