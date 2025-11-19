@@ -500,4 +500,5 @@ print("\n4. OUTLIERS:")
 print("   - Several features show outliers (see boxplot notches)")
 print("   - These may affect k-NN performance (distance-based method)")
 ```
-<img src="graphe.png" style="height:150px;margin-right:100px"/>
+<img src="graphe.png" style="height:200px;margin-right:250px"/>
+<img src="Graphe2.png" style="height:200px;margin-right:250px"/>
