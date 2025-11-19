@@ -384,3 +384,120 @@ $$x'_i = \frac{x_i - \mu}{\sigma}$$
 **Auteur :** [Votre nom]  
 **Dataset :** UCI Wine Quality Dataset  
 **Langage :** Python 3.x (scikit-learn, pandas, numpy)
+
+
+
+
+
+```python
+from ucimlrepo import fetch_ucirepo
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# ========= 1. Load the data =========
+print("========= Loading Dataset =========\n")
+
+# fetch dataset
+wine_quality = fetch_ucirepo(id=186)
+
+# data (as pandas dataframes)
+X = wine_quality.data.features
+y = wine_quality.data.targets
+
+# Combiner X et y pour créer un DataFrame complet
+df = pd.concat([X, y], axis=1)
+
+print("========= Dataset summary =========\n")
+df.info()
+
+print("\n========= A few first samples =========\n")
+print(df.head())
+
+# metadata
+print("\n========= Metadata =========\n")
+print(wine_quality.metadata)
+
+# variable information
+print("\n========= Variable information =========\n")
+print(wine_quality.variables)
+
+print(f"\nNumber of samples: {df.shape[0]}")
+print(f"Number of input features: {df.shape[1] - 1}")  # -1 car on exclut 'quality'
+
+# ========= 2. Form arrays X and Y =========
+X = df.drop("quality", axis=1)  # we drop the column "quality"
+Y = df["quality"]
+
+print("\n========= Wine Qualities =========\n")
+print(Y.value_counts().sort_index())
+
+# ========= 3. Binary classification =========
+# bad wine (y=0) : quality <= 5 and good quality (y=1) otherwise
+Y = [0 if val <= 5 else 1 for val in Y]
+print("\n========= Binary Classification =========\n")
+print("Class distribution:")
+print(pd.Series(Y).value_counts().sort_index())
+print(f"\nClass 0 (bad wine, quality <= 5): {pd.Series(Y).value_counts()[0]} samples")
+print(f"Class 1 (good wine, quality > 5): {pd.Series(Y).value_counts()[1]} samples")
+
+# ========= 4. Statistical analysis =========
+print("\n========= Statistical Analysis =========\n")
+
+# Mean and variance
+print("Mean values:")
+print(X.mean())
+print("\nVariance:")
+print(X.var())
+print("\nStandard deviation:")
+print(X.std())
+
+# Full statistical summary
+print("\n========= Complete Statistical Summary =========\n")
+print(X.describe())
+# Boxplot
+plt.figure(figsize=(14, 6))
+ax = plt.gca()
+sns.boxplot(data=X, orient="v", palette="Set1", width=1.5, notch=True)
+ax.set_xticklabels(ax.get_xticklabels(), rotation=90)
+plt.title("Boxplot of Input Variables")
+plt.ylabel("Value")
+plt.tight_layout()
+plt.show()
+
+# Correlation heatmap
+plt.figure(figsize=(12, 10))
+corr = X.corr()
+sns.heatmap(corr, annot=True, fmt='.2f', cmap='coolwarm', center=0,
+            square=True, linewidths=1, cbar_kws={"shrink": 0.8})
+plt.title("Correlation Matrix of Input Variables")
+plt.tight_layout()
+plt.show()
+# Comments on results
+print("\n========= Comments on Statistical Analysis =========\n")
+print("1. SCALE DIFFERENCES:")
+print(f"   - total_sulfur_dioxide has the highest mean ({X['total_sulfur_dioxide'].mean():.2f})")
+print(f"   - Density is close to 1 ({X['density'].mean():.4f})")
+print(f"   - This suggests normalization will be important for k-NN\n")
+
+print("2. VARIABILITY:")
+print(f"   - residual_sugar shows high variance ({X['residual_sugar'].var():.2f})")
+print(f"   - free_sulfur_dioxide also varies significantly ({X['free_sulfur_dioxide'].var():.2f})")
+print(f"   - These features have wide distributions (see boxplot)\n")
+
+print("3. CORRELATIONS (|r| > 0.5):")
+high_corr = []
+for i in range(len(corr.columns)):
+    for j in range(i+1, len(corr.columns)):
+        if abs(corr.iloc[i, j]) > 0.5:
+            high_corr.append((corr.columns[i], corr.columns[j], corr.iloc[i, j]))
+
+for feat1, feat2, corr_val in high_corr:
+    print(f"   - {feat1} <-> {feat2}: {corr_val:.3f}")
+
+print("\n4. OUTLIERS:")
+print("   - Several features show outliers (see boxplot notches)")
+print("   - These may affect k-NN performance (distance-based method)")
+```
+<img src="graphe.png" style="height:150px;margin-right:100px"/>
