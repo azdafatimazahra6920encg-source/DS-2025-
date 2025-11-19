@@ -1,3 +1,6 @@
+# AZDA FATIMA-ZAHRA
+<img src="faat.jpg" style="height:150px;margin-right:100px"/>
+
 # Compte Rendu - TP Machine Learning
 ## Analyse et Classification de la Qualité des Vins
 
