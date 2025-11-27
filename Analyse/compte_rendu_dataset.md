@@ -1,3 +1,7 @@
+## AZDA FATIMA-ZAHRA
+<img src="faat.jpg" style="height:150px;margin-right:100px"/>
+
+
 # 📊 Compte Rendu d'Analyse : Students Academic Performance Dataset
 
 ---
