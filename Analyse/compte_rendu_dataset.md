@@ -683,5 +683,3 @@ Pour toute question sur cette analyse ou pour obtenir le code source complet :
 **Statut** : ✅ Analyse complétée
 
 ---
-
-*Ce rapport a été généré dans le cadre d'une analyse de données éducatives visant à améliorer la compréhension des facteurs de réussite académique et à développer des outils prédictifs pour soutenir les étudiants.*
