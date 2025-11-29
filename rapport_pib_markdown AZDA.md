@@ -589,5 +589,4 @@ Règle de Pareto : 20% des causes produisent 80% des effets
 | Top 60% (9 pays) | 76,1% | Domination oligopolistique |
 | 80% restants | 23,9% | Marginalisation |
 
-**Conclusion** :
-L'économie mondiale suit une
+
