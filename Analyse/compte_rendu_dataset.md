@@ -678,8 +678,6 @@ Pour toute question sur cette analyse ou pour obtenir le code source complet :
 ---
 
 **Date du rapport** : 27 Novembre 2025  
-**Auteur** : [Votre nom]  
-**Version** : 1.0  
-**Statut** : ✅ Analyse complétée
+**Auteur** : AZDA FATIMA-ZAHRA
 
 ---
