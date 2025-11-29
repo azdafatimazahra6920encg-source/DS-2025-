@@ -671,8 +671,6 @@ Le code Python complet avec tous les commentaires est disponible dans l'artifact
 ## 📧 Contact et Support
 
 Pour toute question sur cette analyse ou pour obtenir le code source complet :
-- 📂 Repository : [Lien vers votre GitHub/GitLab]
-- 📧 Email : [Votre email]
 - 📊 Dataset : [Kaggle - Students Academic Performance Dataset](https://www.kaggle.com/datasets/sadiajavedd/students-academic-performance-dataset)
 
 ---
